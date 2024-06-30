@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "craftableeyes",
+  "version": "${version}",
+  "name": "Craftable Eyes",
+  "description": "Makes Eyes of Ender craftable again",
+  "authors": [
+    "Polar Onyx"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Polar-Onyx/Craftable-Eyes",
+    "sources": "https://github.com/Polar-Onyx/Craftable-Eyes"
+  },
+
+  "license": "MIT",
+  "icon": "craftableEyes/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.craftableEyes.craftableEyesMod"
+    ],
+    "btw:addon": [
+      "btw.community.craftableEyes.craftableEyesAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "TA"
+  },
+  "mixins": [
+    "craftableEyes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}
+
